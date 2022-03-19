@@ -34,10 +34,24 @@
     <p>An inventive and diligent developer skilled in every aspect of the software development life cycle from the conception of a
       product that will meet business needs and client expectations to the provision of long-term support for legacy code.
       Professional experience on teams following the Agile/Scrum methodology both in face-to-face contexts and in remote
-      work with colleagues in varying time zones. Delivered lectures in both academic and professional contexts.</p>
+      work with colleagues in varying time zones. Delivered lectures in both academic and professional contexts.
+    </p>
+  </div>
+  <div class="techs">
+
   </div>
 
-  <script src="" async defer></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("summary-anim");
+        }
+      });
+    })
+
+    observer.observe(document.querySelector(".summary"));
+  </script>
 </body>
 
 </html>
