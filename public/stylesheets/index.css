@@ -1,13 +1,13 @@
 body {
   width: 100vw;
-  height: var(--overall-height);
+  height: 300vh;
 }
 
 .name-box {
   background-color: cornflowerblue;
   border: 1px solid black;
   width: 100vw;
-  height: var(--individual-height);
+  height: 100vh;
 }
 
 .firstname {
@@ -31,7 +31,7 @@ body {
   flex-direction: row;
   justify-content: center;
   text-transform: uppercase;
-  width: 0%;
+  width: 0vw;
   font-size: 4.5vw;
   background-color: white;
   animation-name: grow;
@@ -42,7 +42,7 @@ body {
 
 @keyframes grow {
   to {
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -66,8 +66,8 @@ body {
   flex-direction: row;
   align-items: center;
   width: 100vw;
-  height: 50vw;
-  line-height: 4rem;
+  height: 100vh;
+  line-height: 7vh;
   font-size: 2vw;
   text-align: start;
 }
@@ -90,8 +90,70 @@ body {
 }
 
 .techs {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   font-size: 2vw;
+}
+
+.tech-item {
+  width: 10vw;
+  min-height: 1vw;
+  border: 1px solid black;
+}
+
+.bar60 {
+  background-color: lightskyblue;
+  height: 100%;
+  width: 0%;
+}
+
+.sixty {
+  animation-name: growin60;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes growin60 {
+  to {
+    width: 60%;
+  }
+}
+
+.bar80 {
+  background-color: lightskyblue;
+  height: 100%;
+  width: 0%;
+}
+
+.eighty {
+  animation-name: growin80;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes growin80 {
+  to {
+    width: 80%;
+  }
+}
+
+.bar100 {
+  background-color: lightskyblue;
+  height: 100%;
+  width: 0%;
+}
+
+.hundred {
+  animation-name: growin100;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes growin100 {
+  to {
+    width: 100%;
+  }
 }

@@ -31,18 +31,48 @@
     </div>
   </div>
   <div class="summary">
-    <p>An inventive and diligent developer skilled in every aspect of the software development life cycle from the conception of a
-      product that will meet business needs and client expectations to the provision of long-term support for legacy code.
-      Professional experience on teams following the Agile/Scrum methodology both in face-to-face contexts and in remote
-      work with colleagues in varying time zones. Delivered lectures in both academic and professional contexts.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Saepe beatae deleniti earum! Ducimus at aperiam totam quidem saepe cum incidunt in aliquid perspiciatis quae animi illo harum odit cumque atque,
+      dicta dolor temporibus dolorem a ut nemo voluptatem inventore eveniet officiis. Sit hic cum aut, ipsam quos cumque voluptatem tempora.
     </p>
   </div>
   <div class="techs">
-
+    <p>JavaScript</p>
+    <div class="tech-item">
+      <div class="bar100"></div>
+    </div>
+    <p>HTML</p>
+    <div class="tech-item">
+      <div class="bar100"></div>
+    </div>
+    <p>CSS</p>
+    <div class="tech-item">
+      <div class="bar80"></div>
+    </div>
+    <p>Node.JS</p>
+    <div class="tech-item">
+      <div class="bar80"></div>
+    </div>
+    <p>Express.JS</p>
+    <div class="tech-item">
+      <div class="bar80"></div>
+    </div>
+    <p>Python</p>
+    <div class="tech-item">
+      <div class="bar80"></div>
+    </div>
+    <p>C#</p>
+    <div class="tech-item">
+      <div class="bar80"></div>
+    </div>
+    <p>SQL</p>
+    <div class="tech-item">
+      <div class="bar60"></div>
+    </div>
   </div>
 
   <script>
-    const observer = new IntersectionObserver(entries => {
+    const sumOb = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("summary-anim");
@@ -50,7 +80,50 @@
       });
     })
 
-    observer.observe(document.querySelector(".summary"));
+    const sixtyOb = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("sixty");
+        }
+      });
+    })
+
+    const eightyOb = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("eighty");
+        }
+      });
+    })
+
+    const hundredOb = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("hundred");
+        }
+      });
+    })
+
+    document.querySelectorAll(".summary").forEach((i) => {
+      if (i) {
+        sumOb.observe(i);
+      }
+    });
+    document.querySelectorAll(".bar60").forEach((i) => {
+      if (i) {
+        sixtyOb.observe(i);
+      }
+    });
+    document.querySelectorAll(".bar80").forEach((i) => {
+      if (i) {
+        eightyOb.observe(i);
+      }
+    });
+    document.querySelectorAll(".bar100").forEach((i) => {
+      if (i) {
+        hundredOb.observe(i);
+      }
+    });
   </script>
 </body>
 
