@@ -92,21 +92,22 @@ body {
 .techs {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
   font-size: 2vw;
 }
 
-.tech-item {
+.outline {
   width: 10vw;
-  min-height: 1vw;
+  min-height: 2vh;
   border: 1px solid black;
 }
 
-.bar60 {
+.progress {
   background-color: lightskyblue;
-  height: 100%;
+  min-height: 2vh;
+  max-height: 2vh;
   width: 0%;
 }
 
@@ -122,12 +123,6 @@ body {
   }
 }
 
-.bar80 {
-  background-color: lightskyblue;
-  height: 100%;
-  width: 0%;
-}
-
 .eighty {
   animation-name: growin80;
   animation-duration: 2s;
@@ -138,12 +133,6 @@ body {
   to {
     width: 80%;
   }
-}
-
-.bar100 {
-  background-color: lightskyblue;
-  height: 100%;
-  width: 0%;
 }
 
 .hundred {

@@ -37,37 +37,53 @@
     </p>
   </div>
   <div class="techs">
-    <p>JavaScript</p>
-    <div class="tech-item">
-      <div class="bar100"></div>
+    <div class="techs-item">
+      <p>JavaScript</p>
+      <div class="outline">
+        <div class="progress bar100">&nbsp;</div>
+      </div>
     </div>
-    <p>HTML</p>
-    <div class="tech-item">
-      <div class="bar100"></div>
+    <div class="techs-item">
+      <p>HTML</p>
+      <div class="outline">
+        <div class="progress bar100">&nbsp;</div>
+      </div>
     </div>
-    <p>CSS</p>
-    <div class="tech-item">
-      <div class="bar80"></div>
+    <div class="techs-item">
+      <p>CSS</p>
+      <div class="outline">
+        <div class="progress bar80">&nbsp;</div>
+      </div>
     </div>
-    <p>Node.JS</p>
-    <div class="tech-item">
-      <div class="bar80"></div>
+    <div class="techs-item">
+      <p>Node.JS</p>
+      <div class="outline">
+        <div class="progress bar80">&nbsp;</div>
+      </div>
     </div>
-    <p>Express.JS</p>
-    <div class="tech-item">
-      <div class="bar80"></div>
+    <div class="techs-item">
+      <p>Express.JS</p>
+      <div class="outline">
+        <div class="progress bar80">&nbsp;</div>
+      </div>
     </div>
-    <p>Python</p>
-    <div class="tech-item">
-      <div class="bar80"></div>
+    <div class="techs-item">
+      <p>Python</p>
+      <div class="outline">
+        <div class="progress bar80">&nbsp;</div>
+      </div>
     </div>
-    <p>C#</p>
-    <div class="tech-item">
-      <div class="bar80"></div>
+    <div class="techs-item">
+      <p>C#</p>
+      <div class="outline">
+        <div class="progress bar60">&nbsp;</div>
+      </div>
     </div>
-    <p>SQL</p>
-    <div class="tech-item">
-      <div class="bar60"></div>
+    <div class="techs-item">
+      <p>SQL</p>
+      <div class="outline">
+        <div class="progress bar60">&nbsp;</div>
+      </div>
     </div>
   </div>
 
@@ -109,16 +125,19 @@
         sumOb.observe(i);
       }
     });
+
     document.querySelectorAll(".bar60").forEach((i) => {
       if (i) {
         sixtyOb.observe(i);
       }
     });
+
     document.querySelectorAll(".bar80").forEach((i) => {
       if (i) {
         eightyOb.observe(i);
       }
     });
+
     document.querySelectorAll(".bar100").forEach((i) => {
       if (i) {
         hundredOb.observe(i);
