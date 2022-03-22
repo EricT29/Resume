@@ -90,7 +90,26 @@
     </div>
   </div>
   <div class="education">
-
+    <div>
+      <div class="degree">
+        Associate Degree of Applied Science: Computer Programming
+      </div>
+      <div class="college">
+        Augusta Technical College (2021)
+      </div>
+    </div>
+    <div>
+      <div class="certificate">
+        Certificate of Completion
+      </div>
+      <div class="clubhouse">
+        <a href="https://www.theclubhou.se/code-boot-camp">TheClubhou.se</a> Coding Bootcamp (2021)
+      </div>
+    </div>
+  </div>
+  <div class="portfolio">
+    Portfolio Section <br>
+    (Under Construction)
   </div>
 
   <script>
@@ -98,6 +117,14 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("summary-anim");
+        }
+      });
+    })
+
+    const eduOb = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("education-anim");
         }
       });
     })
@@ -147,6 +174,12 @@
     document.querySelectorAll(".bar100").forEach((i) => {
       if (i) {
         hundredOb.observe(i);
+      }
+    });
+
+    document.querySelectorAll(".education").forEach((i) => {
+      if (i) {
+        eduOb.observe(i);
       }
     });
   </script>
