@@ -212,4 +212,53 @@ body {
   width: 100vw;
   height: 100vh;
   font-size: 9vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+}
+
+.port-item {
+  max-height: 25vh;
+  max-width: 25vw;
+  border: 2px solid gray;
+  border-radius: 1vw;
+  margin-top: 1vh;
+  transition-property: margin-top;
+  transition-duration: 0.5s;
+}
+
+.port-item:hover {
+  margin-top: 0.5vh;
+  border-color: black;
+}
+
+.description {
+  font-size: 2vh;
+  opacity: 0;
+}
+
+.desc-reveal {
+  animation-name: desc-reveal;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes desc-reveal {
+  to {
+    opacity: 1;
+  }
+}
+
+.desc-fade {
+  animation-name: desc-fade;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes desc-fade {
+  to {
+    opacity: 0;
+  }
 }

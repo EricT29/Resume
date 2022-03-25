@@ -79,7 +79,7 @@
     <div class="techs-item">
       <p>C#</p>
       <div class="outline">
-        <div class="progress bar60">&nbsp;</div>
+        <div class="progress bar80">&nbsp;</div>
       </div>
     </div>
     <div class="techs-item">
@@ -108,8 +108,30 @@
     </div>
   </div>
   <div class="portfolio">
-    Portfolio Section <br>
-    (Under Construction)
+    <div class="math">
+      <img onmouseover="reveal(0)" onmouseleave="hide(0)" class="port-item" src="/public/images/Math.png" alt="">
+      <div class="description" id="0">
+        Generate and be graded on math worksheets.
+      </div>
+    </div>
+    <div class="exercise">
+      <img onmouseover="reveal(1)" onmouseleave="hide(1)" class="port-item" src="/public/images/Exercise.png" alt="">
+      <div class="description" id="1">
+        Track your exercise and view your progress.
+      </div>
+    </div>
+    <div class="tictactoe">
+      <img onmouseover="reveal(2)" onmouseleave="hide(2)" class="port-item" src="/public/images/Tic-Tac-Toe.png" alt="">
+      <div class="description" id="2">
+        A classic game of TicTacToe with an unbeatable computer.
+      </div>
+    </div>
+    <div class="good-vibes">
+      <img onmouseover="reveal(3)" onmouseleave="hide(3)" class="port-item" src="/public/images/GoodVibes.png" alt="">
+      <div class="description" id="3">
+        A special place where you can send me your positive energy.
+      </div>
+    </div>
   </div>
 
   <script>
@@ -182,6 +204,16 @@
         eduOb.observe(i);
       }
     });
+
+    function reveal(num) {
+      document.getElementById(num.toString()).classList.remove("desc-fade");
+      document.getElementById(num.toString()).classList.add("desc-reveal");
+    }
+
+    function hide(num) {
+      document.getElementById(num.toString()).classList.remove("desc-reveal");
+      document.getElementById(num.toString()).classList.add("desc-fade");
+    }
   </script>
 </body>
 
