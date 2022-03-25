@@ -217,7 +217,7 @@ body {
   justify-items: center;
 }
 
-.port-item {
+.port-image {
   max-height: 25vh;
   max-width: 25vw;
   border: 2px solid gray;
@@ -227,7 +227,7 @@ body {
   transition-duration: 0.5s;
 }
 
-.port-item:hover {
+.port-image:hover {
   margin-top: 0.5vh;
   border-color: black;
 }
@@ -235,6 +235,7 @@ body {
 .description {
   font-size: 2vh;
   opacity: 0;
+  text-align: center;
 }
 
 .desc-reveal {
