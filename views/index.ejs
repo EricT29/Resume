@@ -148,6 +148,7 @@
   <script>
     const sumOb = new IntersectionObserver(entries => {
       entries.forEach(entry => {
+        console.log(entry.intersectionRatio)
         if (entry.isIntersecting) {
           entry.target.classList.add("summary-anim");
         }
