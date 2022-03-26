@@ -196,6 +196,7 @@ body {
 .education-anim {
   opacity: 0;
   animation-name: edu-fade;
+  animation-delay: 1s;
   animation-duration: 5s;
   animation-fill-mode: forwards;
 }
@@ -206,11 +207,19 @@ body {
   }
 }
 
+.portfolio-header {
+  width: 100vw;
+  height: 10vh;
+  font-size: 8vh;
+  text-align: center;
+  background-color: paleturquoise;
+}
+
 .portfolio {
   color: white;
   background-color: cornflowerblue;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   font-size: 9vh;
   display: grid;
   grid-template-columns: auto auto;
